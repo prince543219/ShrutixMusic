@@ -2,7 +2,7 @@ import random
 from ShrutixMusic.utils.database import total_chats
 from pyrogram import Client, filters
 import os
-from ShrutixMusic import app
+from ShrutixMusic import nand as app
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pyrogram import filters
 import random
