@@ -182,7 +182,7 @@ from ShrutixMusic import nand
 
 REPO_VIDEO = "https://files.catbox.moe/aoafwn.mp4"
 
-@nand.on_message(filters.command(["repo", "source"]) & filters.private)
+@nand.on_message(filters.command(["repoooooooo", "77777777source"]) & filters.private)
 async def send_repo(_, message: Message):
     await message.reply_video(
         video=REPO_VIDEO,
@@ -412,3 +412,4 @@ async def vote_change(client, CallbackQuery, _):
         )
     except MessageNotModified:
         return
+
