@@ -3,6 +3,8 @@ from typing import Dict, List, Union
 
 from ShrutixMusic import userbot
 from ShrutixMusic.core.mongo import mongodb
+from motor.motor_asyncio import AsyncIOMotorClient
+
 
 client = AsyncIOMotorClient('mongodb+srv://himanx3456u_db_user:himanx3456u_db_user@cluster0.lj4h541.mongodb.net/?appName=Cluster0')
 db = client['Cluster0']
@@ -650,4 +652,5 @@ async def remove_banned_user(user_id: int):
     if not is_gbanned:
         return
     return await blockeddb.delete_one({"user_id": user_id})
+
 
